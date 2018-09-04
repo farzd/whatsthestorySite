@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Whats the Story - download</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.iamhtml.com/css/main.css">
+        <style>
+            .other {
+                display: none;
+            }
+
+            .active {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Whats the story </h1>
+       
+
+        <script type="text/javascript"> // <![CDATA[
+        //iPhone Version:
+        if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+           // window.location = "http://goo.gl/IWd7J";
+           alert('iphone')
+        }
+        //Android Version:
+        if(navigator.userAgent.match(/android/i)) {
+           // window.location = "http://goo.gl/1K1Hi";
+           alert('android')
+        }
+
+        else {
+            var otherEl = document.getElementById("other");
+            otherEl.className += " active";
+        }
+       
+         
+        </script>
+        <div id="other">
+            show links
+        </div>
+    </body>
+</html>
